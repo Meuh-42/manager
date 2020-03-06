@@ -1,31 +1,123 @@
-export const ASIA_FORMAT = ['SG', 'ASIA', 'AU'];
-export const FRENCH_FORMAT = [
-  'CZ',
-  'ES',
-  'FR',
-  'GB',
-  'IE',
-  'IT',
-  'LT',
-  'MA',
-  'NL',
-  'PL',
-  'PT',
-  'TN',
-];
-export const GERMAN_FORMAT = ['DE', 'FI', 'SN'];
-export const US_FORMAT = ['CA', 'WE', 'WS', 'QC', 'US'];
-export const INTERVAL_UNIT = {
+export const INTERVALS = {
   DAY: 'day',
   MONTH: 'month',
   NONE: 'none',
   YEAR: 'year',
 };
 
+export const LAYOUTS = {
+  WITHOUT_TAX: 'withoutTax',
+  WITH_TAX: 'withTax',
+};
+
+export const TAXES = {
+  VAT: 'vat',
+  GST: 'gst',
+};
+
+export const UNITS = {
+  CENTS: 'cents',
+  UCENTS: 'ucents',
+};
+
+export const LAYOUT_BY_SUBSIDIARY = {
+  ASIA: {
+    LAYOUT: [LAYOUTS.WITH_TAX, LAYOUTS.WITHOUT_TAX],
+    TAX: TAXES.GST,
+  },
+  AU: {
+    LAYOUT: [LAYOUTS.WITH_TAX, LAYOUTS.WITHOUT_TAX],
+    TAX: TAXES.GST,
+  },
+  CA: {
+    LAYOUT: [LAYOUTS.WITHOUT_TAX],
+    TAX: TAXES.VAT,
+  },
+  CZ: {
+    LAYOUT: [LAYOUTS.WITH_TAX, LAYOUTS.WITHOUT_TAX],
+    TAX: TAXES.VAT,
+  },
+  DE: {
+    LAYOUT: [LAYOUTS.WITH_TAX],
+    TAX: TAXES.VAT,
+  },
+  ES: {
+    LAYOUT: [LAYOUTS.WITH_TAX, LAYOUTS.WITHOUT_TAX],
+    TAX: TAXES.VAT,
+  },
+  FI: {
+    LAYOUT: [LAYOUTS.WITH_TAX],
+    TAX: TAXES.VAT,
+  },
+  FR: {
+    LAYOUT: [LAYOUTS.WITH_TAX, LAYOUTS.WITHOUT_TAX],
+    TAX: TAXES.VAT,
+  },
+  GB: {
+    LAYOUT: [LAYOUTS.WITH_TAX, LAYOUTS.WITHOUT_TAX],
+    TAX: TAXES.VAT,
+  },
+  IE: {
+    LAYOUT: [LAYOUTS.WITH_TAX, LAYOUTS.WITHOUT_TAX],
+    TAX: TAXES.VAT,
+  },
+  IT: {
+    LAYOUT: [LAYOUTS.WITH_TAX, LAYOUTS.WITHOUT_TAX],
+    TAX: TAXES.VAT,
+  },
+  LT: {
+    LAYOUT: [LAYOUTS.WITH_TAX, LAYOUTS.WITHOUT_TAX],
+    TAX: TAXES.VAT,
+  },
+  MA: {
+    LAYOUT: [LAYOUTS.WITH_TAX, LAYOUTS.WITHOUT_TAX],
+    TAX: TAXES.VAT,
+  },
+  NL: {
+    LAYOUT: [LAYOUTS.WITH_TAX, LAYOUTS.WITHOUT_TAX],
+    TAX: TAXES.VAT,
+  },
+  PL: {
+    LAYOUT: [LAYOUTS.WITH_TAX, LAYOUTS.WITHOUT_TAX],
+    TAX: TAXES.VAT,
+  },
+  PT: {
+    LAYOUT: [LAYOUTS.WITH_TAX, LAYOUTS.WITHOUT_TAX],
+    TAX: TAXES.VAT,
+  },
+  QC: {
+    LAYOUT: [LAYOUTS.WITHOUT_TAX],
+    TAX: TAXES.VAT,
+  },
+  SG: {
+    LAYOUT: [LAYOUTS.WITH_TAX],
+    TAX: TAXES.VAT,
+  },
+  SN: {
+    LAYOUT: [LAYOUTS.WITH_TAX, LAYOUTS.WITHOUT_TAX],
+    TAX: TAXES.GST,
+  },
+  TN: {
+    LAYOUT: [LAYOUTS.WITH_TAX, LAYOUTS.WITHOUT_TAX],
+    TAX: TAXES.VAT,
+  },
+  US: {
+    LAYOUT: [LAYOUTS.WITHOUT_TAX],
+    TAX: TAXES.VAT,
+  },
+  WE: {
+    LAYOUT: [LAYOUTS.WITHOUT_TAX],
+    TAX: TAXES.VAT,
+  },
+  WS: {
+    LAYOUT: [LAYOUTS.WITHOUT_TAX],
+    TAX: TAXES.VAT,
+  },
+};
+
 export default {
-  ASIA_FORMAT,
-  FRENCH_FORMAT,
-  GERMAN_FORMAT,
-  US_FORMAT,
-  INTERVAL_UNIT,
+  LAYOUT_BY_SUBSIDIARY,
+  INTERVALS,
+  TAXES,
+  UNITS,
 };
