@@ -55,6 +55,9 @@ export default /* @ngInject */ ($stateProvider) => {
         }
         return promise;
       },
+
+      availableUpgrades: /* ngInject */ (serviceName, VpsService) => VpsService
+        .getAvailableUpgrades(serviceName),
     },
   });
 };

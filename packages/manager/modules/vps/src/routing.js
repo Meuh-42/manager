@@ -76,6 +76,9 @@ export default /* @ngInject */ ($stateProvider) => {
         },
         vps: /* @ngInject */ (serviceName, VpsService) =>
           VpsService.getSelectedVps(serviceName),
+
+        catalog: /* @ngInject */ (connectedUser, VpsService) => VpsService
+          .getCatalog(connectedUser.ovhSubsidiary),
       },
       views: {
         'vpsHeader@vps': {
