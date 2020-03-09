@@ -1,74 +1,7 @@
-<span data-ng-if="::$ctrl.price">
-    <span data-ng-if="::$ctrl.isAsiaFormat()">
-        <strong data-ng-class="{ 'd-block': $ctrl.block }">
-            <span
-                data-ng-bind="{{'order_catalog_price_gst_excl_label' | translate}}"
-                data-translate-values="{ price: $ctrl.getPriceText($ctrl.price) }"
-            ></span>
-            <span data-ng-if="$ctrl.interval">
-                &#47;
-                <span
-                    data-translate="{{:: 'order_catalog_price_interval_' + $ctrl.interval}}"
-                ></span>
-            </span>
-        </strong>
-        <small data-ng-class="{ 'd-block': $ctrl.block }">
-            (<span
-                data-translate="order_catalog_price_gst_incl_label"
-                data-translate-values="{ price: $ctrl.getPriceText($ctrl.price + $ctrl.tax) }"
-            >
-            </span
-            >)
-        </small>
+<span class="oui-box d-inline-block py-2 border-0 rounded-0">
+    <span class="d-block text-right price-frequency">Prix HT/mois</span>
+    <span class="d-flex flex-row justify-content-between">
+        <span class="price-label">Nouveau prix mensuel</span>
+        <span class="price">30 €</span>
     </span>
-    <span data-ng-if="::$ctrl.isFrenchFormat()">
-        <strong data-ng-class="{ 'd-block': $ctrl.block }">
-            <span
-                data-translate="order_catalog_price_tax_excl_label"
-                data-translate-values="{ price: $ctrl.getPriceText($ctrl.price) }"
-            ></span>
-            <span data-ng-if="$ctrl.interval">
-                &#47;
-                <span
-                    data-translate="{{:: 'order_catalog_price_interval_' + $ctrl.interval}}"
-                ></span>
-            </span>
-        </strong>
-        <small data-ng-class="{ 'd-block': $ctrl.block }">
-            (<span
-                data-translate="order_catalog_price_tax_incl_label"
-                data-translate-values="{ price: $ctrl.getPriceText($ctrl.price + $ctrl.tax) }"
-            >
-            </span
-            >)
-        </small>
-    </span>
-    <strong
-        data-ng-if="::$ctrl.isGermanFormat()"
-        data-ng-class="{ 'd-block': $ctrl.block }"
-    >
-        <span
-            data-ng-bind="::$ctrl.getPriceText($ctrl.price + $ctrl.tax)"
-        ></span>
-        <span data-ng-if="$ctrl.interval">
-            &#47;
-            <span
-                data-translate="{{:: 'order_catalog_price_interval_' + $ctrl.interval}}"
-            ></span>
-        </span>
-    </strong>
-    <strong
-        data-ng-if="::$ctrl.isUSFormat()"
-        data-ng-class="{ 'd-block': $ctrl.block }"
-    >
-        <span data-ng-bind="::$ctrl.getPriceText($ctrl.price)"></span>
-        <span data-ng-if="$ctrl.interval">
-            &#47;
-            <span
-                data-translate="{{:: 'order_catalog_price_interval_' + $ctrl.interval}}"
-            ></span>
-        </span>
-    </strong>
 </span>
-<strong data-ng-if="::!$ctrl.price" data-translate="order_catalog_price_free">
-</strong>

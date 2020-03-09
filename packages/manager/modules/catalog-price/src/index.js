@@ -3,6 +3,8 @@ import 'angular-translate';
 import ngTranslateAsyncLoader from '@ovh-ux/ng-translate-async-loader';
 import ovhManagerCore from '@ovh-ux/manager-core';
 
+import './catalog-price.scss';
+
 import component from './catalog-price.component';
 
 const moduleName = 'ovhManagerCatalogPrice';

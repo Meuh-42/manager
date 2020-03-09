@@ -1,10 +1,24 @@
 {
-  "order_catalog_price_free": "Inclus",
-  "order_catalog_price_tax_excl_label": "{{ price }} HT",
-  "order_catalog_price_tax_incl_label": "{{ price }} TTC",
-  "order_catalog_price_gst_excl_label": "{{ price }} ex. GST",
-  "order_catalog_price_gst_incl_label": "{{ price }} incl. GST",
-  "order_catalog_price_interval_day": "jour",
-  "order_catalog_price_interval_month": "mois",
-  "order_catalog_price_interval_year": "an"
+  "order_catalog_price_day_newPrice": "<strong>Nouveau prix journalier</strong>",
+  "order_catalog_price_day_price_withoutTax_vat": "Prix HT/jour",
+  "order_catalog_price_day_price_withoutTax_gst": "Prix sans GST/jour",
+  "order_catalog_price_day_price_withTax_vat": "Prix TTC/jour",
+  "order_catalog_price_day_price_withTax_gst": "Prix avec GST/jour",
+  "order_catalog_price_day_period": "Prix pour les <strong>{{duration}} jours d'engagement restant</strong>",
+
+  "order_catalog_price_month_newPrice": "<strong>Nouveau prix mensuel</strong>",
+  "order_catalog_price_month_price_withoutTax_vat": "Prix HT/mois",
+  "order_catalog_price_month_price_withoutTax_gst": "Prix sans GST/mois",
+  "order_catalog_price_month_price_withTax_vat": "Prix TTC/mois",
+  "order_catalog_price_month_price_withTax_gst": "Prix avec GST/mois",
+  "order_catalog_price_month_period": "Prix pour les <strong>{{duration}} mois d'engagement restant</strong>",
+
+  "order_catalog_price_year_newPrice": "<strong>Nouveau prix annuel</strong>",
+  "order_catalog_price_year_price_withoutTax_vat": "Prix HT/an",
+  "order_catalog_price_year_price_withoutTax_gst": "Prix sans GST/an",
+  "order_catalog_price_year_price_withTax_vat": "Prix TTC/an",
+  "order_catalog_price_year_price_withTax_gst": "Prix avec GST/an",
+  "order_catalog_price_year_period": "Prix pour les <strong>{{duration}} années d'engagement restant</strong>",
+
+  "order_catalog_price_free": "Inclus"
 }

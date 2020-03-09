@@ -7,6 +7,13 @@
 <div class="container-fluid my-4 mx-5">
     <div data-ovh-alert="cloudDB_order_alert"></div>
 
+    <ovh-manager-catalog-price
+        data-price="3"
+        data-tax="15"
+        data-user="$ctrl.user"
+    >
+    </ovh-manager-catalog-price>
+
     <oui-stepper
         data-current-index="$ctrl.currentIndex"
         data-on-finish="$ctrl.validateCheckout()"
