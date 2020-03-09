@@ -69,6 +69,14 @@ export const MENU = [
   {
     subitems: [
       {
+        id: 'load-balancer',
+        options: {
+          state: 'pci.projects.project.loadbalancer',
+        },
+        title: 'Load Balancer',
+        regions: ['EU'],
+      },
+      {
         id: 'private-network',
         options: {
           state: 'pci.projects.project.privateNetwork',
