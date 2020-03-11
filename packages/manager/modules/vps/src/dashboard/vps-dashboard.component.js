@@ -23,8 +23,10 @@ export default {
     tabSummary: '<',
     vps: '<',
 
-    availableUpgrades: '<',
-    catalog: '<',
+    // configurationTile: '<',
+    // availableUpgrades: '<',
+    // catalog: '<',
+    // goToUpgrade: '<',
   },
   controller,
   name: 'ovhManagerVpsDashboard',

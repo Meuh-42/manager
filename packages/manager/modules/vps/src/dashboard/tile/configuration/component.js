@@ -6,9 +6,10 @@ export default {
   controller,
   template,
   bindings: {
-    availableUpgrades: '<',
+    configurationTile: '<',
     catalog: '<',
     vps: '<',
     stateVps: '<',
+    goToUpgrade: '<',
   },
 };
