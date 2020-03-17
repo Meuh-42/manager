@@ -495,15 +495,15 @@ angular.module('managerApp').controller(
         .$promise.then(() => {
           this.hasIncidentOccured = true;
         })
-        .catch((error) => {
-          const errorStatus = get(error, 'status');
+        .catch((err) => {
+          const errorStatus = get(err, 'status');
           if (errorStatus === XDSL_NO_INCIDENT_CODE) {
             this.hasIncidentOccured = false;
           } else {
             this.TucToast.error(
               `${this.$translate.instant(
                 'xdsl_details_diagnostic_get_incident_error',
-              )} ${get(error, 'data.message', '')}`,
+              )} ${get(err, 'data.message', '')}`,
             );
           }
         })
@@ -527,8 +527,7 @@ angular.module('managerApp').controller(
             .replace(/\./g, ' ')
             .toUpperCase();
           this.$scope.access.xdsl.priceHT = result.price.value;
-          this.$scope.access.xdsl.priceTTC =
-            result.price.value + (result.price.value * 20) / 100;
+          this.$scope.access.xdsl.priceTTC = result.priceWithTax.value;
         })
         .catch((error) => {
           if (error.data.message.includes(XDSL_EXCHANGE_MODEM.errBase)) {
