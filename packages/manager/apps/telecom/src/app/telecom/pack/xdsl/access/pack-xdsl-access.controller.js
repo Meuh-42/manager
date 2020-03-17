@@ -543,6 +543,10 @@ angular.module('managerApp').controller(
                 this.$scope.access.xdsl.messageCantExchange =
                   'xdsl_modem_comfort_exchange_already_opened_rma';
                 break;
+              case XDSL_EXCHANGE_MODEM.errorCodeSDSL:
+                this.$scope.access.xdsl.messageCantExchange =
+                  'xdsl_modem_comfort_exchange_not_replace_modem_sdsl';
+                break;
               default:
                 this.TucToastError(error.data.message);
                 break;

@@ -4,6 +4,7 @@ export const XDSL_EXCHANGE_MODEM = {
   errBase: 'ERR0',
   errorCodeLast: 'ERR001',
   errorCodeRMA: 'ERR002',
+  errorCodeSDSL: 'ERR004',
 };
 
 export default {
